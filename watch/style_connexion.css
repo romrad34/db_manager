@@ -1,0 +1,62 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  background: #f4f4f4;
+  color: white;
+  min-width: 1000px; }
+
+#title_main_page {
+  text-align: center;
+  color: #01A2A6;
+  font-size: 1.7em; }
+
+#phpmyadmin_word {
+  color: #db7a19; }
+
+#login_screen {
+  width: 800px;
+  position: relative;
+  height: 500px;
+  top: 150px;
+  margin: auto;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  background-color: #01A2A6;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 50%;
+  box-shadow: 10px 0px 5px grey; }
+
+#title_connexion_box {
+  color: white;
+  margin-bottom: 50px;
+  text-align: center;
+  width: 400px;
+  font-size: 1.5em; }
+
+label {
+  font-size: 1.3em; }
+
+#login_screen > input {
+  margin-bottom: 25px;
+  font-size: 1.4em;
+  height: 30px;
+  width: 400px;
+  border-radius: 5px; }
+
+#login_screen button {
+  border-radius: 5px; }
+
+#confirm_button {
+  background-color: #db7a19;
+  color: ghostwhite;
+  width: 80px;
+  font-size: 1.2em; }
+
+/*# sourceMappingURL=style_connexion.css.map */

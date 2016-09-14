@@ -1,0 +1,515 @@
+@mixin background_border_radius() {
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+}
+
+@mixin background_color() {
+    background-color: #222930;
+}
+
+@mixin background_section_color() {
+    background-color: #E9E9E9;
+}
+
+@mixin background_important_color() {
+    background-color:  rgb(48, 115, 121);
+}
+
+@mixin important_color() {
+    color: rgba(38, 50, 72, 0.83);
+}
+
+@mixin dark_color() {
+    color: #263248;
+}
+
+@mixin main_color() {
+    color: #2F3738;
+}
+
+@mixin light_color() {
+    color: #e9f4f5;
+}
+
+html {
+    width: 100%;
+    @include background_section_color();
+    height: 100%;
+}
+
+body {
+    margin: 0 auto;
+    padding: 0;
+    @include background_color();
+    min-width: 1200px;
+    height: 100%;
+}
+
+#id_hr {
+    border: 0px;
+    height: 0;
+    opacity: 0.8;
+    border-bottom: 0.1px solid #ff8000;
+    margin-top: 50px;
+    width: 100%;
+}
+
+#phpmyadmin_word {
+    color: #5C4B51;
+}
+
+#title_main_page {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    width: 1000px;
+    background-color: rgba(5, 30, 219, 0.1);
+//    @include important_color();    
+    @include background_important_color();
+    @include light_color();
+    font-size: 1.7em;
+    margin-bottom: 30px;
+    position: relative;
+    width: auto;
+    font-weight: bold;
+}
+
+#home_icon {
+    margin-right: 10px;
+}
+
+#home_icon:hover {
+    cursor: pointer;
+}
+
+#main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    flex-wrap: wrap;
+    height: 70%;
+}
+
+//selection part
+#selection_main {
+    font-size: 1.5em;
+    @include background_section_color();
+    @include main_color();
+    @include background_border_radius();
+    width: 750px;
+
+}
+
+#title_selection_box {
+    text-align: center;
+    font-weight: bold;
+    @include dark_color();
+}
+
+#selection_table_box form {
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+.select_part {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    //    background-color: #ffffff;
+    border-radius: 15px;
+}
+.active_part
+{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.separation {
+    margin-left: 20px;
+    margin-right: 20px;
+    border-right: 0.2px solid #2F3738;
+    box-shadow: 0.9px 0px 5px #2F3738;
+}
+
+.title_select_db {
+    text-align: center;
+}
+
+select {
+    width: 200px;
+    border-radius: 5px;
+    height: 25px;
+}
+
+.custom-combobox {
+    position: relative;
+    display: inline-block;
+    left: 1px;
+}
+
+.custom-combobox-toggle {
+    position: relative;
+    top: 2px;
+    bottom: 0;
+    margin-left: 0px;
+    padding: 0;
+    height: 19px;
+    width: 25px;
+}
+
+input.custom-combobox-input.ui-widget.ui-widget-content.ui-state-default.ui-corner-left.ui-autocomplete-input {
+    font-size: small;
+}
+
+.ui-autocomplete {
+    max-height: 300px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.custom-combobox-input {
+    width: 170px;
+}
+
+.ui-menu-item {
+    font-size: small;
+}
+
+.db_input {
+    margin-bottom: 30px;
+    width: 250px;
+}
+
+.submit_button {
+    border: none;
+    position: relative;
+    top: -10px;
+    width: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    height: 20px;
+    @include background_important_color();
+    @include light_color();
+}
+
+.submit_button:hover {
+    cursor: pointer;
+}
+
+.delete_edit_icons {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+}
+
+.delete_edit_icons>img:hover {
+    cursor: pointer;
+}
+
+#tool_tip_new_db {
+    top: 0;
+    display: none;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+#tool_tip_edit_table {
+    top: 0;
+    display: none;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+#tool_tip_edit_field {
+    top: 0;
+    display: none;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+#tool_tip_create_table {
+    flex-direction: column;
+    display: none;
+    justify-content: flex-start;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    z-index: 10;
+    color: black;
+}
+
+#tool_tip_new_field {
+    top: 0;
+    display: none;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    z-index: 10;
+    color: white;
+}
+
+.fields_new_table {
+    height: 150px;
+}
+
+#id_new_table {
+    border: 2px solid black;
+    padding-bottom: 5px;
+}
+
+.fields_new_table table {
+    @include background_border_radius();
+    text-align: center;
+    border-collapse: collapse;
+    font-weight: bold;
+    width: 950px;
+    border-right: 1px solid black;
+    flex: 2;
+    display: flex;
+}
+
+.fields_new_table table input {
+    height: 15px;
+    width: 90%;
+}
+
+.fields_new_table table tr th,
+.fields_new_table table tr td,
+.fields_new_table table tr th {
+    border-right: 1px solid black;
+    height: 30px;
+}
+
+#title_new_table_name {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+#title_new_table_name input {
+    margin: auto;
+    width: 200px;
+}
+
+#submit_button_new_table {
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+#confirm_button {
+    width: 150px;
+    border-radius: 5px;
+    height: 30px;
+    @include background_important_color();
+    color: white;
+    font-weight: bolder;
+}
+
+#cancel_button {
+    width: 150px;
+    border-radius: 5px;
+    height: 30px;
+    @include background_important_color();
+    color: white;
+    font-weight: bolder;
+}
+
+.img_add_line_new_table:hover {
+    cursor: pointer;
+}
+
+#tool_tip_new_db input {
+    width: 300px;
+}
+
+#tool_tip_edit_db input {
+    width: 300px;
+}
+#input_newfield_type{
+    width: 100px;
+} #input_newfield_width{
+    width: 100px;
+} 
+
+.tool_tip_text {
+    display: flex;
+    background-color: #232d38;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    margin-top: 150px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tool_tip_text p {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+#bdd_name {
+    color: darkorange;
+}
+
+//menu part
+#logoff_icon {
+    margin-left: 70px;
+}
+
+#logoff_icon:hover {
+    cursor: pointer;
+}
+
+#menu_main {
+    margin-left: 50px;
+    width: 200px;
+    @include background_border_radius();
+    @include background_section_color();
+    @include main_color();
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#title_menu_box {
+    font-size: 1.5em;
+    text-align: center;
+    font-weight: bold;
+    @include dark_color();
+}
+
+.menu_part {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.menu_part>img {
+    cursor: pointer;
+}
+
+.menu_button {
+    cursor: pointer;
+    text-align: center;
+   
+    line-height: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1.5em;
+    @include background_important_color();
+    @include light_color();
+    display: block;
+    width: 150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 30px;
+    position: relative;
+    bottom: 20px;
+}
+
+#config_button:hover {
+    cursor: pointer;
+}
+
+// section table
+#table_main {
+    margin-top: 50px;
+    @include background_section_color();
+    @include important_color();
+    width: 1000px;
+    height: 350px;
+    border-radius: 15px;
+    -moz-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    margin-bottom: 100px;
+}
+
+#table_name {
+    font-weight: bold;
+    font-size: 1.5em;
+    @include main_color();
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#table_rows table {
+    margin-left: 25px;
+    width: 950px;
+    @include background_color();
+    text-align: center;
+    font-weight: bold;
+}
+
+#table_rows table th {
+    font-size: 1.1em;
+}
+
+tr,
+td,
+th,
+table {
+    margin: 0 auto;
+    padding: 0;
+}
+
+#table_rows table tr,
+#table_rows table th,
+#table_rows table td {
+    height: 30px;
+    border-right: 1px solid black;
+}
+
+#table_rows table tr:nth-child(odd) {
+    background-color: rgba(206, 173, 152, 0.83);
+    @include light_color();
+}
+
+#table_rows table tr:nth-child(even) {
+    @include main_color();
+}
+
+section {
+    box-shadow: inset 0 0 8px 2px rgba(0, 0, 0, 0.3);
+    margin: auto;
+}

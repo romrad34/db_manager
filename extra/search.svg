@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="gradient-1" gradientUnits="userSpaceOnUse" cx="127.51" cy="152.451" r="36.628" gradientTransform="matrix(-12.649346, -9.457877, 8.198428, -10.964918, 878.654147, 3287.010045)">
+      <stop style="stop-color: rgb(74, 162, 189);" offset="0"/>
+      <stop style="stop-color: rgb(133, 253, 243);" offset="1"/>
+    </radialGradient>
+    <radialGradient id="gradient-2" gradientUnits="userSpaceOnUse" cx="156.202" cy="150.592" r="36.628" gradientTransform="matrix(-2.740426, -2.157249, 2.038154, -2.589139, 306.028065, 906.617056)">
+      <stop style="stop-color: rgb(156, 218, 237);" offset="0"/>
+      <stop style="stop-color: rgb(255, 255, 255);" offset="1"/>
+    </radialGradient>
+    <linearGradient id="gradient-4" gradientUnits="userSpaceOnUse" x1="261.446" y1="352.445" x2="261.446" y2="426.846" gradientTransform="matrix(1, 0, 0, 1, -0.000061, 0)">
+      <stop style="stop-color: rgb(111, 219, 223);" offset="0"/>
+      <stop style="stop-color: rgb(132, 251, 242);" offset="1"/>
+    </linearGradient>
+  </defs>
+  <ellipse style="fill: url(#gradient-1); stroke: none; stroke-width: 16;" cx="150.417" cy="149.845" rx="140.79" ry="140.79"/>
+  <ellipse style="fill: url(#gradient-2); stroke: none; stroke-width: 16;" cx="150.417" cy="149.845" rx="86.992" ry="86.992"/>
+  <rect x="144.693" y="352.445" width="233.506" height="74.401" rx="37.201" ry="37.201" style="fill: url(#gradient-4);" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 424.208988, -118.820485)"/>
+</svg>
